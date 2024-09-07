@@ -54,5 +54,6 @@ func main() {
 		// Encode as PNG.
 		f, _ := os.Create("palettes/tailwind-" + color + ".png")
 		png.Encode(f, img)
+		f.Close()
 	}
 }
